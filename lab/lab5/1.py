@@ -1,13 +1,12 @@
 import re
- 
-def match_pattern(s):
-    pattern = r'ab*'  
-    if re.fullmatch(pattern, s):
-        return True
-    else:
-        return False
- 
-test_strings = ['a', 'ab', 'abb', 'abbb', 'b', 'ba', 'aab', 'abc']
- 
-for string in test_strings:
-    print(f"'{string}': {match_pattern(string)}")
+
+def match_string(s):
+    pattern = r"^ab*$" 
+    return bool(re.fullmatch(pattern, s))
+
+user_input = input("Enter a string: ")
+
+if match_string(user_input):
+    print("The string matches the pattern.")
+else:
+    print("The string does NOT match the pattern.")
