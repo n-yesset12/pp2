@@ -5,7 +5,7 @@ def copy_file(source, destination):
         shutil.copyfile(source, destination)
         print(f"File copied successfully from '{source}' to '{destination}'")
     except FileNotFoundError:
-        print("Source file not found. Please check the filename and path.")
+        print("Source file not found. Check the filename and path.")
 
 source_file = input()
 destination_file = input()

@@ -3,7 +3,7 @@ def count_case(s):
     lower_count = sum(1 for char in s if char.islower())
     return upper_count, lower_count
 
-user_input = input("Enter a string: ")
+user_input = input()
 
 upper, lower = count_case(user_input)
 print(f"Uppercase letters: {upper}")

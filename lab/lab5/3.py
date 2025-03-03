@@ -6,11 +6,11 @@ def find_sequences(s):
     return matches
 
 
-user_input = input("Enter a string: ")
+user_input = input()
 
 
 sequences = find_sequences(user_input)
 if sequences:
-    print("Matching sequences:", sequences)
+    print("Matching sequences", sequences)
 else:
-    print("No matching sequences found.")
+    print("No matching sequences")

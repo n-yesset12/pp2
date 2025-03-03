@@ -6,8 +6,8 @@ def replace_characters(s):
     return replaced_string
 
 
-user_input = input("Enter a string: ")
+user_input = input()
 
 
 result = replace_characters(user_input)
-print("Modified string:", result)
+print(result)
