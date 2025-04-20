@@ -6,9 +6,9 @@ import random
 # Initialize pygame
 pygame.init()
 
-# Constants
+# Window
 WIDTH, HEIGHT = 600, 600
-CELL_SIZE = 40  # Bigger cells
+CELL_SIZE = 40  
 GRID_WIDTH = WIDTH // CELL_SIZE
 GRID_HEIGHT = HEIGHT // CELL_SIZE
 
@@ -45,7 +45,7 @@ level = 1
 score = 0
 speed = 6
 
-# Wall configuration (can change per level if desired)
+# Wall configuration 
 walls = []
 
 def draw_grid():
